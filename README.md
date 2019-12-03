@@ -37,4 +37,4 @@ PS C:\> Invoke-RestMethod -Uri "https://iazserverless.azurewebsites.net/api/Spin
 
 ### Result
 
-![Result](https://github.com/ChendrayanV/iAzServerless/blob/master/assets/Dreidel.mp4)
+![Result](https://github.com/ChendrayanV/iAzServerless/blob/master/assets/Dreidel.jpg?raw=true)
