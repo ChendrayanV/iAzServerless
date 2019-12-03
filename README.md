@@ -38,3 +38,4 @@ PS C:\> Invoke-RestMethod -Uri "https://iazserverless.azurewebsites.net/api/Spin
 
 ### Result
 
+[![Result](https://cdn.imgbin.com/23/17/19/imgbin-dreidel-hanukkah-accordion-h9LbzwFgKsDz6qF210BZg0i3w.jpg)](https://github.com/ChendrayanV/iAzServerless/blob/master/assets/Dreidel.mp4)
