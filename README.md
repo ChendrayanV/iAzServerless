@@ -2,6 +2,8 @@
 
 25 Days of Serverless
 
+> For a demo purpose all my azure functions will have anonymous authentication.
+
 ## Challenge 1
 
 [Task December 01, 2019](https://25daysofserverless.com/calendar/1)
