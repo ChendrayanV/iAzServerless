@@ -32,7 +32,6 @@ Push-OutputBinding -Name Response -Value ([HttpResponseContext]@{
 ### Usage
 
 ```PowerShell
-PS C:\> $Key = "{FunctionHostKey}"
 PS C:\> Invoke-RestMethod -Uri "https://iazserverless.azurewebsites.net/api/SpinDreidel"
 ```
 
