@@ -19,10 +19,10 @@ $html = html {
             form -Class "form-horizontal" -action "/api/iUpdateEmployee" -method "post" -target "_blank" -Attributes @{'autocomplete' = 'OFF' } -enctype 'application/x-www-form-urlencoded' -Content {
                 
                 Div -Class "form-group" -Content {
-                    label -Class "control-label col-sm-2" -Attributes @{'for' = 'employeeID' } -Content "Employee ID"
+                    label -Class "control-label col-sm-2" -Attributes @{'for' = 'ID' } -Content "Employee ID"
                     Div -Class "col-sm-10" -Content {
-                        input -type "text" -Class "form-control" -id "employeeID" -name "employeeID"
-                        small -Id 'employeeIDHelp' -Class 'form-text text-muted' -Content "Format 00000X - Example 000001"
+                        input -type "text" -Class "form-control" -id "ID" -name "ID"
+                        small -Id 'IDHelp' -Class 'form-text text-muted' -Content "Format 00000X - Example 0001"
                     }
                 }
 
@@ -35,50 +35,34 @@ $html = html {
                 }
 
                 Div -Class "form-group" -Content {
-                    label -Class "control-label col-sm-2" -Attributes @{'for' = 'LastName' } -Content "Last Name"
+                    label -Class "control-label col-sm-2" -Attributes @{'for' = 'SurName' } -Content "Sur Name"
                     Div -Class "col-sm-10" -Content {
-                        input -type "text" -Class "form-control" -id "LastName" -name "LastName"
-                        small -Id 'lastNameHelp' -Class 'form-text text-muted' -Content "Free Text - Example Venkatesan"
+                        input -type "text" -Class "form-control" -id "SurName" -name "SurName"
+                        small -Id 'SurNameHelp' -Class 'form-text text-muted' -Content "Free Text - Example Venkatesan"
                     }
                 }
 
                 Div -Class "form-group" -Content {
-                    label -Class "control-label col-sm-2" -Attributes @{'for' = 'dateofJoining' } -Content "Date Of Joining"
+                    label -Class "control-label col-sm-2" -Attributes @{'for' = 'date' } -Content "Date"
                     Div -Class "col-sm-10" -Content {
-                        input -type "text" -Class "form-control" -id "dateofJoining" -name "dateofJoining"
-                        small -Id 'dateofJoiningHelp' -Class 'form-text text-muted' -Content "Free Text - Example 01/03/2005"
+                        input -type "text" -Class "form-control" -id "date" -name "date" -value ((Get-Date).ToShortDateString())
+                        small -Id 'dateHelp' -Class 'form-text text-muted' -Content "Free Text - Example 01/03/2005"
                     }
                 }
 
                 Div -Class "form-group" -Content {
-                    label -Class "control-label col-sm-2" -Attributes @{'for' = 'department' } -Content "Department"
+                    label -Class "control-label col-sm-2" -Attributes @{'for' = 'Category' } -Content "Category"
                     Div -Class "col-sm-10" -Content {
-                        input -type "text" -Class "form-control" -id "department" -name "department"
-                        small -Id 'departmentHelp' -Class 'form-text text-muted' -Content "Free Text - IT"
+                        input -type "text" -Class "form-control" -id "Category" -name "Category"
+                        small -Id 'CategoryHelp' -Class 'form-text text-muted' -Content "Free Text - VEG"
                     }
                 }
 
                 Div -Class "form-group" -Content {
-                    label -Class "control-label col-sm-2" -Attributes @{'for' = 'manager' } -Content "Manager"
+                    label -Class "control-label col-sm-2" -Attributes @{'for' = 'Dish' } -Content "Dish"
                     Div -Class "col-sm-10" -Content {
-                        input -type "text" -Class "form-control" -id "manager" -name "manager"
-                        small -Id 'managerHelp' -Class 'form-text text-muted' -Content "Free Text - My Boss"
-                    }
-                }
-
-                Div -Class "form-group" -Content {
-                    label -Class "control-label col-sm-2" -Attributes @{'for' = 'country' } -Content "Country"
-                    Div -Class "col-sm-10" -Content {
-                        input -type "text" -Class "form-control" -id "country" -name "country"
-                        small -Id 'countryHelp' -Class 'form-text text-muted' -Content "Free Text - India"
-                    }
-                }
-
-                Div -Class "form-group" -Content {
-                    label -Class "control-label col-sm-2" -Attributes @{'for' = 'city' } -Content "City"
-                    Div -Class "col-sm-10" -Content {
-                        input -type "text" -Class "form-control" -id "city" -name "city"
-                        small -Id 'cityHelp' -Class 'form-text text-muted' -Content "Free Text - Bangalore"
+                        input -type "text" -Class "form-control" -id "Dish" -name "Dish"
+                        small -Id 'DishHelp' -Class 'form-text text-muted' -Content "Lamb Biriyani"
                     }
                 }
 
