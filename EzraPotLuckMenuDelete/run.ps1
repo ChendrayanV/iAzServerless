@@ -1,10 +1,10 @@
 using namespace System.Net
 param($Request, $TriggerMetadata)
 # Associate values to output bindings by calling 'Push-OutputBinding'.
-$employees = Get-Content .\database\EzraPotLuckMenu.json | ConvertFrom-Json
-$employees | Where-Object {$_.iD -ne ($Request.Body.iD)} | ConvertTo-Json | Set-Content .\database\EzraPotLuckMenu.json
+$EzraPotLuckMenu = Get-Content .\database\EzraPotLuckMenu.json | ConvertFrom-Json
+$EzraPotLuckMenu | Where-Object {$_.ID -ne ($Request.Body.ID)} | ConvertTo-Json | Set-Content .\database\EzraPotLuckMenu.json
 $body = @{
-    employeeName = $Request.Body.iD 
+    ID = $Request.Body.ID 
     message = "Remove from Database"
 } | ConvertTo-Json
 Push-OutputBinding -Name Response -Value ([HttpResponseContext]@{
