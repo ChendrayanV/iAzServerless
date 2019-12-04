@@ -16,13 +16,13 @@ $html = html {
         }
 
         Div -Class "container" -Content {
-            form -Class "form-horizontal" -action "/api/iUpdateEmployee" -method "post" -target "_blank" -Attributes @{'autocomplete' = 'OFF' } -enctype 'application/x-www-form-urlencoded' -Content {
+            form -Class "form-horizontal" -action "/api/EzraPotLuckMenuUpdate" -method "post" -target "_blank" -Attributes @{'autocomplete' = 'OFF' } -enctype 'application/x-www-form-urlencoded' -Content {
                 
                 Div -Class "form-group" -Content {
                     label -Class "control-label col-sm-2" -Attributes @{'for' = 'ID' } -Content "Employee ID"
                     Div -Class "col-sm-10" -Content {
                         input -type "text" -Class "form-control" -id "ID" -name "ID"
-                        small -Id 'IDHelp' -Class 'form-text text-muted' -Content "Format 00000X - Example 0001"
+                        small -Id 'IDHelp' -Class 'form-text text-muted' -Content "Format 000X - Example 0001"
                     }
                 }
 
