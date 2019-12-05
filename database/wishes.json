@@ -1,0 +1,19 @@
+{
+    "documents": [
+        {
+            "id": 1,
+            "text": "my little brother is so annoying and stupid",
+            "who": "Adam"
+        },
+        {
+            "id": 2,
+            "text": "I really like the bike I got for a present",
+            "who": "Adam"
+        },
+        {
+            "id": 3,
+            "text": "Me gusta mi futbol",
+            "who": "sergio"
+        }
+    ]
+}
