@@ -125,4 +125,12 @@ Push-OutputBinding -name Response -Value ([HttpResponseContext]@{
         Body       = $html
     })
 ```
+### Result 
+
+> Query 
+![Result](https://github.com/ChendrayanV/iAzServerless/blob/master/assets/ImageResult.png?raw=true)
+
+> Result
+![Result](https://github.com/ChendrayanV/iAzServerless/blob/master/assets/UnspalshSearch.png?raw=true)
+
 
