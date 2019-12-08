@@ -13,7 +13,4 @@ Built an Azure Function using PowerShell which retrieves Service Now incidents a
 
 ## Output
 
-<video width="320" height="200" controls preload> 
-    <source src="video.mp4"></source> 
-    <source src="video.webm"></source> 
-</video>
+[![Unsplash]()](https://youtu.be/PFQzTp2zVGw)
