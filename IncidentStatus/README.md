@@ -13,4 +13,4 @@ Built an Azure Function using PowerShell which retrieves Service Now incidents a
 
 ## Output
 
-[![Unsplash]()](https://youtu.be/PFQzTp2zVGw)
+[![Incident Status](https://github.com/ChendrayanV/iAzServerless/blob/master/assets/IncidentStatus.png?raw=true)](https://www.youtube.com/watch?v=MTwVCRWfgxI)
