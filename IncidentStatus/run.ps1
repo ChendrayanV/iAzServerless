@@ -1,7 +1,7 @@
 using namespace System.Net
 param($Request, $TriggerMetadata)
-$user = "admin"
-$pass = "PowerShell@67890^"
+$user = $ENV:ServiceNowAdmin
+$pass = $ENV:ServiceNowSecret
 $base64AuthInfo = [Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes(("{0}:{1}" -f $user, $pass)))
 $headers = New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
 $headers.Add('Authorization', ('Basic {0}' -f $base64AuthInfo))
