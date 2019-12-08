@@ -9,7 +9,7 @@ what is being done, and when to expect additional information.
 
 Built an Azure Function using PowerShell which retrieves Service Now incidents and shows status information along with dingbats.
 
-[Try Now](https://iazserverless.azurewebsites.net/api/iimageresult)
+[Try Now](https://iazserverless.azurewebsites.net/api/incidentstatus)
 
 ## Output
 
